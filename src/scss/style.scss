@@ -1,0 +1,32 @@
+// Это диспетчер подключений, тут не должно быть ничего, кроме импортов
+
+// Глобальные подключения
+@import 'variables.scss';
+@import 'fonts.scss';
+@import 'global.scss';
+
+// Растровый спрайт: примеси-генераторы правил
+@import './src/blocks/sprite-png/sprite-png.scss';
+@include sprites($spritesheet-sprites); // Генератор селекторов для всех картинок спрайта
+
+// БЭМ-блоки. Один БЭМ-блок = 1 файл. ВСЕГДА.
+@import './src/blocks/page/page.scss';
+@import './src/blocks/main-nav/main-nav.scss';
+@import './src/blocks/page-header/page-header.scss';
+@import './src/blocks/page-footer/page-footer.scss';
+@import './src/blocks/promo/promo.scss';
+@import './src/blocks/filter/filter.scss';
+@import './src/blocks/card/card.scss';
+@import './src/blocks/pagination/pagination.scss';
+@import './src/blocks/features/features.scss';
+@import './src/blocks/new-block/new-block.scss';
+@import './src/blocks/book-inner/book-inner.scss';
+@import './src/blocks/main-content/main-content.scss';
+@import './src/blocks/book-description/book-description.scss';
+@import './src/blocks/book-info/book-info.scss';
+
+@import './src/blocks/description-book/description-book.scss';
+@import './src/blocks/more-books/more-books.scss';
+@import './src/blocks/banner/banner.scss';
+@import './src/blocks/contact/contact.scss';
+@import './src/blocks/form/form.scss';

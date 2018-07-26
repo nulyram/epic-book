@@ -1,0 +1,15 @@
+mixin book-description()
+  .book-description__card
+        img.book-description__img(src="img/card5.jpg", alt="card-img")
+        h2.book-description__author Эдди Юн
+        h3.book-description__title Суперпотребители
+        span.book-description__meta Кто это и почему они так важны для вашего бизнеса
+
+        +book-info()
+
+  button.book-info__btn Добавить в корзину
+
+  svg(width="15", height="12")
+    use(xlink:href="img/sprite-svg.svg#icon_like")
+
+        +description-book()

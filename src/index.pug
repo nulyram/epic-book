@@ -1,0 +1,21 @@
+extends templates/layout-home.pug
+
+block meta
+  title BOOK STORE
+  meta(name='description', content='BOOK STORE!')
+
+//- block append head
+//-   link(rel="stylesheet", href="some.css")
+//-   script(src='some.js')
+
+block content
+  +promo()
+  +main-content()
+  +features()
+  +new-block()
+
+    //- svg(width="24", height="24")
+    //-   use(xlink:href="img/sprite-svg.svg#tea-cup")
+
+//- block append page-bottom
+//-   script(src='some.js')

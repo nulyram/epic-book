@@ -1,0 +1,12 @@
+mixin page-footer()
+
+  footer.page-footer
+
+    .logo
+      img.page-footer__logo(src="img/logo.png", alt="book-store" width="127" height="14")
+
+    span.page-footer__time с 9:00 до 19:00
+
+
+    -var selected = 'Книги';
+    +main-nav(selected)

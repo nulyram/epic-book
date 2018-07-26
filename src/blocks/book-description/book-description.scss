@@ -1,0 +1,9 @@
+// В этом файле должны быть стили для БЭМ-блока book-description, его элементов, 
+// модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
+// Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
+
+.book-description {
+
+  $block-name:                &; // #{$block-name}__element
+
+}
