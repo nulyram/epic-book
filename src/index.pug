@@ -8,11 +8,16 @@ block meta
 //-   link(rel="stylesheet", href="some.css")
 //-   script(src='some.js')
 
+block page-header
+  +main-nav('')
+  
 block content
   +promo()
   +main-content()
   +features()
-  +new-block()
+  +recommends('Наши новинки')
+
+  
 
     //- svg(width="24", height="24")
     //-   use(xlink:href="img/sprite-svg.svg#tea-cup")

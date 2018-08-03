@@ -1,15 +1,53 @@
 mixin book-description()
+
   .book-description__card
-        img.book-description__img(src="img/card5.jpg", alt="card-img")
-        h2.book-description__author Эдди Юн
-        h3.book-description__title Суперпотребители
-        span.book-description__meta Кто это и почему они так важны для вашего бизнеса
+    .book-description__aside
+      img.book-description__aside-img(src="img/screen1.png", alt="#")
+      img.book-description__aside-img(src="img/screen1.png", alt="#")
+      img.book-description__aside-img(src="img/screen1.png", alt="#")
 
-        +book-info()
 
-  button.book-info__btn Добавить в корзину
+    .book-description__main
+      img.book-description__img(src="img/card5.jpg", alt="card-img")
+      h1.book-description__title
+        span.book-description__author Эдди Юн
+        span Суперпотребители
+      p.book-description__meta Кто это и почему они так важны для вашего бизнеса
 
-  svg(width="15", height="12")
-    use(xlink:href="img/sprite-svg.svg#icon_like")
+      row.book-description__info
+        p
+          span.book-description__info-title Артикул
+          span.book-description__info-value 1090763
 
-        +description-book()
+        p
+          span.book-description__info-title В наличии
+          span.book-description__info-value 5 шт.
+
+        p
+          span.book-description__info-title Издательство
+          span.book-description__info-value Издал
+
+        p
+          span.book-description__info-title Цена
+          span.book-description__info-value 800 ₽
+
+      .book-description__order
+        button.book-info__btn Добавить в корзину
+        input(type="number") 
+        span шт.
+
+      .book-description__likes
+        button.book-description__likes-btn
+          svg(width="15", height="12")
+            use(xlink:href="img/sprite-svg.svg#icon_like")
+        span.book-description__likes-desc 20 людям понравилась эта книга
+
+      .book-description__description
+        h3.book-description__description-title Короткое описание
+        
+        p.book-description__description-text В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них. Они знают о кроссовках всё и имеют десятки пар. Они спортивные фанаты с копиями футболок любимой команды, а стены их гаражей украшены подписанной символикой.
+        p.book-description__description-text.book-description__description-text--hidden В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них. Они знают о кроссовках всё и имеют десятки пар. Они спортивные фанаты с копиями футболок любимой команды, а стены их гаражей украшены подписанной символикой.  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Прямо рот, взгляд рукописи жизни предупреждал заголовок букв щеке ее мир предложения строчка своих, языком но власти инициал сих первую?  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Жизни журчит своих дороге если прямо, рукопись, букв, она за парадигматическая своего деревни бросил великий текста даже свой. Себя, ipsum.
+
+      a.book-description__description-link Показать полностью
+
+      +socials

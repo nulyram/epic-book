@@ -1,10 +1,12 @@
 extends templates/layout-home.pug
 
 block meta
-  title КНИГИ
+  title Суперпотребители
   meta(name='description', content='Книги')
 
 
 
 block content
-  +book-inner()
+  +book-description()
+  +recommends('Книги по тематике')
+  +banner()

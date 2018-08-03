@@ -23,6 +23,7 @@ const ghPages = require('gulp-gh-pages');
 const newer = require('gulp-newer');
 const imagemin = require('gulp-imagemin');
 const pngquant = require('imagemin-pngquant');
+const webp = require('gulp-webp');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const cheerio = require('gulp-cheerio');
@@ -60,9 +61,8 @@ let images = [
 
 // Cписок обрабатываемых файлов в указанной последовательности
 let jsList = [
-  './node_modules/jquery/dist/jquery.min.js',
-  './node_modules/jquery-migrate/dist/jquery-migrate.min.js',
   './node_modules/svg4everybody/dist/svg4everybody.js',
+  './node_modules/aos/dist/aos.js',
   './node_modules/object-fit-images/dist/ofi.js',
   dirs.source + '/js/script.js',
 ];
@@ -116,6 +116,8 @@ gulp.task('copy:img', function () {
     return gulp.src(images)
       // .pipe(newer(dirs.build + '/img')) // потенциально опасно, к сожалению
       .pipe(rename({dirname: ''}))
+      .pipe(gulp.dest(dirs.build + '/img'))
+      .pipe(webp())
       .pipe(gulp.dest(dirs.build + '/img'));
   }
   else {
@@ -255,7 +257,7 @@ gulp.task('serve', ['build'], function() {
   gulp.watch([
     dirs.source + '/scss/style.scss',
     dirs.source + '/scss/variables.scss',
-    dirs.source + '/blocks/**/*.scss',
+    dirs.source + '/blocks/**/*.scss'
   ], ['style']);
   // Слежение за html
   gulp.watch([

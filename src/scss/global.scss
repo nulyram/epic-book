@@ -3,7 +3,10 @@
 html {
   box-sizing: border-box;
 }
-*{box-sizing: inherit;}
+
+*{
+  box-sizing: inherit;
+}
 
 body {
   min-width: 320px;
@@ -11,4 +14,25 @@ body {
   font-family: $font-family;
   color: $text-color;
   font-size: $font-size;
+}
+
+button {
+  border: 0;
+  box-shadow: none;
+  background-color: transparent;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  padding: 0;
+  color: #000;
 }

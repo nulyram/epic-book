@@ -6,4 +6,12 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  background-image: url(../img/banner.jpg);
+  
+  &__shape {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2px;
+    fill-rule: evenodd;
+  }
 }

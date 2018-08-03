@@ -2,8 +2,64 @@
 // модификаторов, псевдоселекторов, псевдоэлементов, @media-условий...
 // Очередность: http://nicothin.github.io/idiomatic-pre-CSS/#priority
 
+
 .page-header {
 
   $block-name:                &; // #{$block-name}__element
 
+  &__second {
+    display: flex;
+  }
+
+  &__logo {
+    justify-content: space-between;
+  }
+
+  &__time{
+    font-size: 14px;
+    padding: 5px 20px;
+    display: none;
+
+    @media (min-width: $screen-sm) {
+      display: block;
+    }
+  }
+
+
+
+  &__controls{
+    display: flex;
 }
+
+  &__bascket {
+    padding: 1px 8px;
+  }
+
+  &__phone {
+    display: none;
+
+    @media (min-width: $screen-sm) {
+      display: inline-block;
+
+    }
+  }
+
+ &__menu{
+    padding: 1px 8px;
+
+  @media (min-width: $screen-sm) {
+      display: none;
+    }
+
+ }
+
+
+  &__row{
+      display: flex;
+      justify-content: space-between;
+ }
+
+}
+
+
+

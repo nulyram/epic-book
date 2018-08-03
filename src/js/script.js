@@ -1,7 +1,9 @@
 svg4everybody(); // иницализация полифила для IE
 
+
+
 $(document).ready(function(){
-  // весь ваш код c jQuery
+  AOS.init();
 });
 
 // Если на проекте нет jQuery, но хочется $( document ).ready... (IE9+)

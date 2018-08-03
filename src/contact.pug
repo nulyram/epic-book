@@ -4,9 +4,11 @@ block meta
   title КОНТАКТЫ
   meta(name='description', content='Контакты')
 
+block page-header
+  +main-nav('контакты')
 
 block content
-  +contact()
-  +form()
+  +contact-info()
+  +contact-form()
   +banner()
 

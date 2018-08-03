@@ -6,4 +6,18 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  display: none;
+
+  @media (min-width: $screen-sm) {
+    display: block;
+  }
+
+  &__list {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
 }

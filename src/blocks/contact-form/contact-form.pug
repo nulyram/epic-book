@@ -1,0 +1,16 @@
+mixin contact-form()
+
+  form.contact-form(action="")
+    span.contact-form__title Есть вопросы?
+    span.contact-form__desc
+      | Напишите нам на почту. Отвечаем в течении дня
+    .contact-form__inner
+      input(type="mail")
+      input(type="text")
+      button(type="submit") Отправить
+
+    input(type="checkbox")
+    label Я согласен(-на) с 
+      a(href="#") политикой конфиденциальности 
+      | и 
+      a(href="#") правилами обработки данных  

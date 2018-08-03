@@ -6,4 +6,31 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  &__meta {
+    font-size: 14px;
+    font-style: italic;
+    margin-top: 30px;
+  }
+
+  &__title-wrap {
+    text-align: left;
+    border: 5px #e8e8e8 solid;
+  }
+
+  &__title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  &__link {
+    font-size: medium;
+    text-decoration: none;
+  }
+
+  &__img {
+    display: none;
+  @media (min-width: $screen-md) {
+    display: block;
+  }
+  }
 }

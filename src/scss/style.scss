@@ -1,4 +1,40 @@
 // Это диспетчер подключений, тут не должно быть ничего, кроме импортов
+// bootstrap 
+@import "bootstrap/scss/functions"; 
+@import "bootstrap/scss/variables"; 
+@import "bootstrap/scss/mixins"; 
+// @import "bootstrap/scss/root"; 
+@import "bootstrap/scss/reboot"; 
+// @import "bootstrap/scss/type"; 
+// @import "bootstrap/scss/images"; 
+// @import "bootstrap/scss/code"; 
+@import "bootstrap/scss/grid"; 
+// @import "bootstrap/scss/tables"; 
+// @import "bootstrap/scss/forms"; 
+// @import "bootstrap/scss/buttons"; 
+// @import "bootstrap/scss/transitions"; 
+// @import "bootstrap/scss/dropdown"; 
+// @import "bootstrap/scss/button-group"; 
+// @import "bootstrap/scss/input-group"; 
+// @import "bootstrap/scss/custom-forms"; 
+// @import "bootstrap/scss/nav"; 
+// @import "bootstrap/scss/navbar"; 
+// @import "bootstrap/scss/card"; 
+// @import "bootstrap/scss/breadcrumb"; 
+// @import "bootstrap/scss/pagination"; 
+// @import "bootstrap/scss/badge"; 
+// @import "bootstrap/scss/jumbotron"; 
+// @import "bootstrap/scss/alert"; 
+// @import "bootstrap/scss/progress"; 
+// @import "bootstrap/scss/media"; 
+// @import "bootstrap/scss/list-group"; 
+// @import "bootstrap/scss/close"; 
+// @import "bootstrap/scss/modal"; 
+// @import "bootstrap/scss/tooltip"; 
+// @import "bootstrap/scss/popover"; 
+// @import "bootstrap/scss/carousel"; 
+// @import "bootstrap/scss/utilities"; 
+// @import "bootstrap/scss/print";
 
 // Глобальные подключения
 @import 'variables.scss';
@@ -19,14 +55,10 @@
 @import './src/blocks/card/card.scss';
 @import './src/blocks/pagination/pagination.scss';
 @import './src/blocks/features/features.scss';
-@import './src/blocks/new-block/new-block.scss';
-@import './src/blocks/book-inner/book-inner.scss';
+@import './src/blocks/recommends/recommends.scss';
 @import './src/blocks/main-content/main-content.scss';
 @import './src/blocks/book-description/book-description.scss';
-@import './src/blocks/book-info/book-info.scss';
-
-@import './src/blocks/description-book/description-book.scss';
-@import './src/blocks/more-books/more-books.scss';
 @import './src/blocks/banner/banner.scss';
-@import './src/blocks/contact/contact.scss';
-@import './src/blocks/form/form.scss';
+@import './src/blocks/contact-info/contact-info.scss';
+@import './src/blocks/socials/socials.scss';
+@import './src/blocks/contact-form/contact-form.scss';

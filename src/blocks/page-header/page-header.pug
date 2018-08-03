@@ -1,19 +1,27 @@
 mixin page-header()
   header.page-header
 
-    .logo
-      img.page-header__logo(src="img/logo.png", alt="book-store" width="127" height="14")
+    .container
+      .row.page-header__row
+        .page-header__second.col-6.col-sm-5
+          .logo
+            img.page-header__logo(src="img/logo.png", alt="book-store" width="127" height="14")
 
-    span.page-header__time с 9:00 до 19:00
+          span.page-header__time с 9:00 до 19:00
+
+        block page-header
+          +main-nav('')
 
 
-    -var selected = 'Книги';
-    +main-nav(selected)
+        .page-header__controls.col-6.col-sm-2
+          button.page-header__bascket
+            svg(width="21", height="20")
+              use(xlink:href="img/sprite-svg.svg#icon_bascket")
 
-    button.page-header__card
-      svg(width="24", height="24")
-        use(xlink:href="img/sprite-svg.svg#icon_bascket")
+          button.page-header__phone
+            svg(width="16", height="16")
+              use(xlink:href="img/sprite-svg.svg#button-phone")
 
-    button.page-header__phone
-      svg(width="24", height="24")
-        use(xlink:href="img/sprite-svg.svg#button_phone")
+          button.page-header__menu
+            svg(width="16", height="16")
+              use(xlink:href="img/sprite-svg.svg#menu")

@@ -7,7 +7,7 @@ mixin main-nav(selected)
       'Контакты': 'contact.html'
     };
 
-  nav.main-nav
+  nav.main-nav.col-sm-5
     ul.main-nav__list
       each val, key in menu
         li(class= selected.toLowerCase() === key.toLowerCase() ? 'main-nav__item  main-nav__item--active' : 'main-nav__item')
