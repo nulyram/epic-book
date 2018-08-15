@@ -1,0 +1,48 @@
+extends templates/layout-home.pug
+
+block meta
+  title BOOK STORE
+  meta(name='description', content='BOOK STORE!')
+
+block page-header
+  +main-nav('')
+
+block content
+  .books
+    .books__content
+      .books__list
+        .books__item
+          .books__title 1. Заголовок книги
+          .books__price 500$
+        .books__item
+          .books__title 2. Заголовок книги
+          .books__price 500$
+        .books__item
+          .books__title 3. Заголовок книги
+          .books__price 500$
+        .books__item
+          .books__title 4. Заголовок книги
+          .books__price 500$
+        .books__item
+          .books__title 5. Заголовок книги
+          .books__price 500$
+        .books__item
+          .books__title 6. Заголовок книги
+          .books__price 500$
+        .books__item
+          .books__title 7. Заголовок книги
+          .books__price 500$
+        .books__item
+          .books__title 8. Заголовок книги
+          .books__price 500$
+
+  button.btn.j-view-books Показать следующее
+
+    //- .books__pagination
+      |Пагинация
+
+
+//- block append head
+//-   link(rel="stylesheet", href="some.css")
+//-   script(src='some.js')
+

@@ -29,7 +29,7 @@
 
   &__controls{
     display: flex;
-}
+  }
 
   &__bascket {
     padding: 1px 8px;
@@ -44,22 +44,21 @@
     }
   }
 
- &__menu{
+  &__menu{
     padding: 1px 8px;
 
   @media (min-width: $screen-sm) {
       display: none;
     }
-
- }
+  }
 
 
   &__row{
       display: flex;
       justify-content: space-between;
- }
+    }
 
-}
+  }
 
 
 

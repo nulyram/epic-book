@@ -7,14 +7,13 @@
   $block-name:                &; // #{$block-name}__element
 
   &__meta {
+    margin-top: 30px;
     font-size: 14px;
     font-style: italic;
-    margin-top: 30px;
   }
 
   &__title-wrap {
-    text-align: left;
-    border: 5px #e8e8e8 solid;
+    border: 8px #e8e8e8 solid;
   }
 
   &__title {
@@ -25,10 +24,12 @@
   &__link {
     font-size: medium;
     text-decoration: none;
+    color: #1a1ff7;
   }
 
-  &__img {
+  &__slider-img {
     display: none;
+
   @media (min-width: $screen-md) {
     display: block;
   }

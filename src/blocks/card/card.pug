@@ -1,9 +1,10 @@
 mixin card(is_new)
 
   .card
-    img.card__img(src="img/card1.jpg", alt="card1")
-    h3.card__meta Латеральная логика
-    span.card__descr Головоломный путь к нестандартному мышлению
+    .container
+      img.card__img(src="img/card1.jpg", alt="card1")
+      h3.card__meta Латеральная логика
+      span.card__descr Головоломный путь к нестандартному мышлению
 
     if (!is_new)
       span.card__price 500 ₽
