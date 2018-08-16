@@ -6,4 +6,27 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  border: 8px #e8e8e8 solid;
+  background-color: #f5f5f5;
+
+  &__title {
+    margin: 50px 0 30px 0;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  &__descr {
+    font-size: 16px;
+  }
+
+  &__inner {
+    display: flex;
+    font-size: 14px;
+
+  }
+
+  &__item {
+    text-align: center;
+  }
+
 }
