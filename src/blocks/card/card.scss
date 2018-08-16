@@ -6,7 +6,21 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  background-color: #f5f5f5;
 
+  &__meta {
+    margin: 40px 0 30px 0;
+    font-weight: bold;
+    font-size: 24;
+  }
 
+  &__descr {
+    font-style: italic;
+    font-size: 16px;
+  }
+
+  &__price {
+    padding: 20px;
+  }
 
 }

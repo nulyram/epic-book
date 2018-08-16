@@ -1,10 +1,44 @@
 mixin card(is_new)
 
-  .card
-    .container
-      img.card__img(src="img/card1.jpg", alt="card1")
-      h3.card__meta Латеральная логика
-      span.card__descr Головоломный путь к нестандартному мышлению
+  //- .card
+  //-   .container
+  //-     .row
+  //-       img.card__img(src="img/card1.jpg", alt="card1")
+  //-       h3.card__meta Латеральная логика
+  //-       span.card__descr Головоломный путь к нестандартному мышлению
 
-    if (!is_new)
-      span.card__price 500 ₽
+  //-   if (!is_new)
+  //-     span.card__price 500 ₽
+
+  .books
+    .books__content
+      .books__list
+        .books__item
+          .books__title
+            img.card__img(src="img/card1.jpg", alt="card1")
+            h3.card__meta Латеральная логика
+            span.card__descr Головоломный путь к нестандартному мышлению
+          .books__price 500$
+        .books__item
+          .books__title 2. Заголовок книги
+          .books__price 500$
+        .books__item
+          .books__title 3. Заголовок книги
+          .books__price 500$
+        .books__item
+          .books__title 4. Заголовок книги
+          .books__price 500$
+        .books__item
+          .books__title 5. Заголовок книги
+          .books__price 500$
+        .books__item
+          .books__title 6. Заголовок книги
+          .books__price 500$
+        .books__item
+          .books__title 7. Заголовок книги
+          .books__price 500$
+        .books__item
+          .books__title 8. Заголовок книги
+          .books__price 500$
+
+  button.btn.j-view-books Показать следующее
