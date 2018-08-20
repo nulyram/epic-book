@@ -2,12 +2,14 @@ mixin recommends(title)
 
   section.recommends
     .container
-      h2.recommends__title= title
-      a.recommends__link(href="#") Все новинки
+      .recommends__wrap
+        h2.recommends__title= title
+        a.recommends__link(href="#") Все новинки
 
-      .recommends__cards
-        +card(true)
-        +card(true)
-        +card(true)
-        +card(true)
+      .recommends__inner
+        .recommends__cards
+          +card(true)
+          +card(true)
+          +card(true)
+          +card(true)
 

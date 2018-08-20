@@ -6,7 +6,10 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  text-align: center;
   background-color: #f5f5f5;
+
+
 
   &__meta {
     margin: 40px 0 30px 0;
@@ -18,10 +21,6 @@
     margin: 40px 0 30px 0;
     font-style: italic;
     font-size: 16px;
-  }
-
-  &__price {
-    padding: 20px;
   }
 
 }

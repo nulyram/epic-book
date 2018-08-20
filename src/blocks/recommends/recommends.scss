@@ -6,4 +6,39 @@
 
   $block-name:                &; // #{$block-name}__element
 
+
+  
+  &__wrap {
+    @media (min-width: $screen-sm) {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+
+  }
+
+  &__link {
+    display: inline-block;
+    margin-bottom: 30px;
+    color: #464af7;
+
+    @media (min-width: $screen-sm) {
+      margin-left: 365px;
+    }
+
+  }
+
+  &__inner {
+  }
+
+  &__cards {
+    display: flex;
+    overflow: scroll;
+    background-image: linear-gradient(to top,#f4d4e4,#f5f5f5);
+  }
+
 }

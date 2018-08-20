@@ -1,17 +1,17 @@
 mixin promo()
   section.promo
-    .container
-      .row
-        .promo__slider
-          .promo__item
-            .promo__item-wrap
-              p.promo__meta.col-12.offset-1.col-sm-8 Новое поступление книги «Симпсоны  и их математические секреты»
-      .row
-        .promo__title-wrap
-          h2.promo__title.col-11.offset-1.col-md-11.offset-md-1 Для поклонников сериала «Симпсоны» и для всех, кому интересна математика.
-          a.promo__link(href="#") Хочу знать о книге больше
-        .promo__img-wrap
-          img.promo__slider-img(src="img/promo-card.jpg", alt="promo-img")
+    .container.promo__inner
+      .promo__slider
+        .promo__item
+          .promo__item-wrap
+            p.promo__meta Новое поступление книги «Симпсоны  и их математические секреты»
+      
+            .promo__title-wrap
+              h2.promo__title Для поклонников сериала «Симпсоны» и для всех, кому интересна математика.
+              a.promo__link(href="#") Хочу знать о книге больше
+          
+          .promo__img-wrap
+            img.promo__slider-img(src="img/promo-card.jpg", alt="promo-img")
 
         //- .promo__item
           .promo__item-wrap

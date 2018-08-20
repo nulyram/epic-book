@@ -6,4 +6,31 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  &__list {
+    margin-left: 70px;
+    display: flex;
+//     a:link {
+//     }
+//     a:visited {
+// }
+//     a:hover {
+//       color: #ef529f;
+// }
+//     a:active {
+//     }
+
+    @media (min-width: $screen-sm) {
+      margin-left: 130px;
+    }
+    @media (min-width: $screen-lg) {
+      margin-left: 230px;
+    }
+  }
+
+  &__item {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+
+
 }

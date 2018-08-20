@@ -7,6 +7,8 @@ block meta
 
 
 block content
+  
+    
   .books
     .books__content
       .books__list
@@ -35,10 +37,16 @@ block content
           .books__title 8. Заголовок книги
           .books__price 500$
 
-  button.btn.j-view-books Показать следующее
+  //- button.btn.j-view-books Показать следующее
 
-    //- .books__pagination
-      |Пагинация
+  .books__pagination
+    ul.books__pagination-list
+      li.books__pagination-item
+        a(href="#").books__pagination-link 1
+      li.books__pagination-item
+        a(href="#").books__pagination-link 2
+
+
 
 
 //- block append head

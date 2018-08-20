@@ -8,30 +8,82 @@
 
   background-color: #f5f5f5;
 
+  &__item {
+
+    @media (min-width: $screen-lg){
+      display: flex;
+    }
+  }
+
+  &__inner {
+    min-height: 300px;
+
+
+  }
+
+  &__slider {
+
+    @media (min-width: $screen-sm){
+      max-width: 90%;
+      padding: 60px;
+    }
+
+    @media (min-width: $screen-sm) {
+      display: flex;
+    }
+  }
 
   &__meta {
-    margin: 30px 0 30px 0;
+    margin-top: 30px;
+    display: inline-block;
     font-size: 14px;
     font-style: italic;
+
+    @media (min-width: $screen-sm) {
+      margin-left: 40px;
+      margin-bottom: 30px;
+    }
   }
 
   &__title-wrap {
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: 8px #e8e8e8 solid;
 
     @media (min-width: $screen-sm) {
       margin-bottom: 50px;
     }
+
+
+
   }
 
   &__title {
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 30px;
     font-size: 24px;
     font-weight: bold;
+
+    @media (min-width: $screen-sm) {
+      margin-top: 40px;
+      margin-left: 40px;
+      margin-right: 60px;
+      margin-bottom: 35px;
+    }
   }
 
   &__link {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 10px;
     font-size: medium;
     text-decoration: none;
     color: #1a1ff7;
+
+      @media (min-width: $screen-sm) {
+        margin-left: 40px;
+      }
   }
 
   &__slider-img {
@@ -40,5 +92,17 @@
   @media (min-width: $screen-md) {
     display: block;
   }
+  }
+
+  &__item-wrap {
+    @media (min-width: $screen-md) {
+      margin-left: 50px;
+    }
+    @media (min-width: $screen-lg) {
+      margin-top: 30px;
+      margin-right: 100px;
+      max-width: 450px;
+    }
+    
   }
 }

@@ -6,4 +6,24 @@
 
   $block-name:                &; // #{$block-name}__element
 
+  &__aside {
+    display: none;
+
+    @media (min-width: $screen-sm) {
+      display: block;
+    }
+
+  &__item {
+    display: inline-flex;
+  }
+
+  &__title {
+    display: flex;
+  }
+
+  &__author {
+    font-size: 14px;
+  }
+  }
+
 }

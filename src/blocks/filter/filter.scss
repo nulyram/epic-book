@@ -7,14 +7,45 @@
   $block-name:                &; // #{$block-name}__element
 
   &__list {
+    padding-top: 15px;
+    padding-bottom: 5px;
     margin: 20px 0 20px 0;
+    overflow: scroll;
     display: flex;
     background-color: #e8e8e8;
+
+
   }
 
   &__item {
-    margin: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
     font-size: 16px;
+
+    @media (min-width: $screen-sm) {
+      margin-left: 70px;
+    }
+  }
+
+  &__item:link {
+    color: #000;
+  }
+  &__item:visited {
+  }
+
+  &__item:hover {
+    text-decoration: none;
+    color: #154088;
+  }
+
+  &__item:active {
+    text-decoration: none;
+    border-bottom: 2px solid #ef529f;
+    padding-bottom: 3px;
+  }
+
+  &__title-wrap {
+    display: inline-flex;
   }
 
 }
