@@ -11,8 +11,48 @@
   margin-bottom: 50px;
   border: 10px solid #e8e8e8;
 
+
+
   &__wrap {
     margin-left: 10px;
+
+    &:before {
+      position: absolute;
+      width: 80px;
+      height: 10px;
+      background-color: #fff;
+      display: block;
+      bottom: -93px;
+      left: 80px;
+      content: no-open-quote;
+    }
+
+    &:after {
+      position: absolute;
+      width: 80px;
+      height: 10px;
+      background-color: #fff;
+      display: block;
+      bottom: -610px;
+      left: 160px;
+      content: no-open-quote;
+    }
+
+
+    @media (min-width: $screen-sm) {
+      margin-left: 20px;
+
+      //   &:before {
+      //     position: absolute;
+      //     width: 80px;
+      //     height: 10px;
+      //     background-color: #000;
+      //     display: block;
+      //     bottom: 100px;
+      //     left: 80px;
+      //     content: no-open-quote;
+      // }
+  }
   }
 
   &__title {
@@ -29,8 +69,6 @@
   &__descr {
     display: inline-block;
     margin-top: 20px;
-
-
   }
 
   &__inner {
@@ -45,16 +83,15 @@
       color: #c6c6c6;
       font-size: 16px;
 
+        @media (min-width: $screen-sm) {
+          width: 40%;
+          margin-right: 30px;
+        }
+        @media (min-width: $screen-sm) {
+          width: 30%;
+        }
     }
 
-    
-    // input[type=checkbox], input[type=radio] {display: none;}
-
-    // input[type=checkbox] + label:before {
-    //   color: transparent;
-    //   display: inline-block;
-    //   border: 3px solid #c6c6c6;
-    // }
   }
 
   &__inner-puch {
@@ -65,9 +102,16 @@
       border-radius: 2px;
       color: #fff;
       background-color: #1f1f1f;
+
+        @media (min-width: $screen-lg) {
+          display: inline-block;
+          position: relative;
+          bottom: 85px;
+          left: 800px;
+        }
   }
 
-  &__check {
-
+  &__conf {
+    color: #3325bb;
   }
 }

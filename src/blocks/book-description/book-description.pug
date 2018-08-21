@@ -1,39 +1,42 @@
 mixin book-description()
 
-  .book-description__card
-    .book-description__aside
-      img.book-description__aside-img(src="img/screen1.png", alt="#")
-      img.book-description__aside-img(src="img/screen1.png", alt="#")
-      img.book-description__aside-img(src="img/screen1.png", alt="#")
+  section.book-description
+    .container
+      aside.book-description__aside
+        img(src="img/screen1.png", alt="#")
+        img(src="img/screen1.png", alt="#")
+        img(src="img/screen1.png", alt="#")
 
-  
-    .book-description__main
-      img.book-description__img(src="img/card5.jpg", alt="card-img")
-      h1.book-description__title
-        span.book-description__author Эдди Юн
-        span Суперпотребители
-      p.book-description__meta Кто это и почему они так важны для вашего бизнеса
+      .book-description__card
 
-      row.book-description__info
-        p
-          span.book-description__info-title Артикул
-          span.book-description__info-value 1090763
+        img.book-description__imgs(src="img/card5.jpg", alt="card-img")
+        h1
+          span.book-description__card-title Эдди Юн
+          span.book-description__card-caption Суперпотребители
+          span.book-description__card-super Супер-
+          span.book-description__card-super потребители
+          p.book-description__descr Кто это и почему они так важны для вашего бизнеса
+        img.book-description__cover(src="img/card5.jpg", alt="card-img")
+          
+        .book-description__info
+          p
+            span.book-description__info-title Артикул
+            span.book-description__info-value 1090763
+          p
+            span.book-description__info-title В наличии
+            span.book-description__info-value 5 шт.
+          p
+            span.book-description__info-title Издательство
+            span.book-description__info-value Издал
+          p
+            span.book-description__info-title Цена
+            span.book-description__info-value 800 ₽
 
-        p
-          span.book-description__info-title В наличии
-          span.book-description__info-value 5 шт.
 
-        p
-          span.book-description__info-title Издательство
-          span.book-description__info-value Издал
-
-        p
-          span.book-description__info-title Цена
-          span.book-description__info-value 800 ₽
 
       .book-description__order
-        button.book-info__btn Добавить в корзину
-        input(type="number") 
+        input.book-description__order-number(type="number") 
+        button.book-description__order-btn Добавить в корзину
         span шт.
 
       .book-description__likes
@@ -44,10 +47,11 @@ mixin book-description()
 
       .book-description__description
         h3.book-description__description-title Короткое описание
-        
-        p.book-description__description-text В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них. Они знают о кроссовках всё и имеют десятки пар. Они спортивные фанаты с копиями футболок любимой команды, а стены их гаражей украшены подписанной символикой.
+
+        p.book-description__description-text В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них. 
+        p.book-description__description-text Они знают о кроссовках всё и имеют десятки пар. Они спортивные фанаты с копиями футболок любимой команды, а стены их гаражей украшены подписанной символикой.
         p.book-description__description-text.book-description__description-text--hidden В отличие от обычных покупателей суперпотребители очень заинтересованы в ваших товарах, а возможно, даже слегка помешаны на них. Они знают о кроссовках всё и имеют десятки пар. Они спортивные фанаты с копиями футболок любимой команды, а стены их гаражей украшены подписанной символикой.  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Прямо рот, взгляд рукописи жизни предупреждал заголовок букв щеке ее мир предложения строчка своих, языком но власти инициал сих первую?  Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Жизни журчит своих дороге если прямо, рукопись, букв, она за парадигматическая своего деревни бросил великий текста даже свой. Себя, ipsum.
 
-      a.book-description__description-link Показать полностью
+        a(href="#").book-description__description-link Показать полностью
 
-      +socials
+        +socials()
